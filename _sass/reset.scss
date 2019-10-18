@@ -1,9 +1,18 @@
-html {
-	padding: 0;
-	margin: 0;
+/* taken from: https://ehtmlu.com/blog/a-simple-css-reset/ */
+
+* {
+  /* Remove all spaces */
+  margin: 0;
+  padding: 0;
+  /* Also, 100% is a equivalent font-size */
+  font-size: 1em;
+  font-family: inherit;
 }
 
-body {
-	marging: 0;
-	padding: 0;
+html {
+  /* .625em is equivalent to 62.5% in browser font-size language 
+      16 * .625em = 10px, now the display is 10 pixels
+      It's easy to calcualte. Want a font size 24px, then
+      use font-size: 240% or font-size: 2.4em */
+  font-size: 62.5%;
 }
